@@ -1,6 +1,8 @@
 
 body{
   font-family: Kirang Haerang, sans-serif;
+  font-size: 1em;
+
 }
 /* MAKING OF SQUARES */
 .square1 {
@@ -36,16 +38,6 @@ body{
 .container, header{
   display: flex;
 }
-.links{
-  display:flex;
-  flex-direction: row;
-  text-align: center;
-  align-content: center;
-  width:80%;
-}
-.link{
-  width:33.3333%;
-}
 header{
   height:20%;
   margin:0% 0% 0% 10%;
@@ -56,19 +48,50 @@ header{
   margin-right: 5%;
 }
 @media screen and (max-width:500px){
+  body{
+    font-size: 0.8em;
+  }
+  header{
+    margin:0% 0% 0% 0%;
+  }
+.container{
+  display: flex;
+  flex-direction: column;
+}
 .squares{
+  display:flex;
   width:100%;
   order:1;
+  justify-content:space-around;
+}
+.square_with_text{
+  width:100%;
   flex-direction: row;
+  margin:0 5 0 5px;
 }
 .mainImage{
   width:100%;
   order:2;
+  text-align: center;
+}
+.main_image{
+  width:100%;
 }
 .links{
-  width:80%;
+  width:100%;
   order:3;
+  justify-content: space-between;
 }
+.link{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  align-items: center;
+}
+.subs,.tags{
+  margin:0px;
+}
+
 @media screen and (min-width:501px){
 .squares{
   width:20%;
