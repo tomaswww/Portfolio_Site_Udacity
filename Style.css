@@ -44,9 +44,6 @@ header{
   flex-direction: row;
   justify-content: space-between;
 }
-.squares{
-  margin-right: 5%;
-}
 @media screen and (max-width:500px){
   body{
     font-size: 0.8em;
@@ -59,6 +56,7 @@ header{
   flex-direction: column;
 }
 .squares{
+  margin-right: 0%;
   display:flex;
   width:100%;
   order:1;
@@ -108,6 +106,7 @@ header{
   flex-direction: row;
 }
 .squares{
+  margin-right: 5%;
   display:flex;
   width:20%;
   order:1;
@@ -115,8 +114,10 @@ header{
   align-items: center;
 }
 .square_with_text{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
   width:100%;
-  margin:0 5 0 5px;
 }
 .mainImage{
   width:100%;
@@ -136,7 +137,8 @@ header{
   align-items: center;
 }
 .subs,.tags{
-  margin:0px;
+  margin:10 0 0 0px;
+  text-align: center;
 }
 .goto{
   margin-bottom: 35px;
