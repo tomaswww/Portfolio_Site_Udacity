@@ -91,6 +91,9 @@ header{
 .subs,.tags{
   margin:0px;
 }
+.goto{
+  margin-bottom: 35px;
+}
 
 @media screen and (min-width:501px){
 .squares{
