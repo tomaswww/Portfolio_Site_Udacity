@@ -49,6 +49,10 @@ header {
     display:flex;
     flex-direction: column;
   }
+  .WLogo {
+    width: 28vw;
+    height: 16vw;
+  }
   .secondary_image {
     width: 80px;
     height: 80px;
