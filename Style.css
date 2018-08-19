@@ -38,7 +38,7 @@ header{
 }
 @media screen and (max-width:600px){
   body{
-    font-size: 0.8em;
+    font-size: 2.5vw;
   }
   header{
     margin:0% 0% 0% 0%;
@@ -51,24 +51,26 @@ header{
 .container{
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .squares{
-  margin-right: 0%;
   display:flex;
+  flex-direction: row;
+  align-content:center;
   width:100%;
   order:1;
-  justify-content:space-around;
 }
 .square_with_text{
-  width:100%;
-  flex-direction: row;
-  margin:0 5 0 5px;
-}
+  display:flex;
+  width:90%;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  }
+
 .mainImage{
   width:100%;
   order:2;
-  text-align: center;
+  text-align: left;
 }
 .main_image{
   width:100%;
@@ -84,16 +86,11 @@ header{
   width:100%;
   align-items: center;
 }
-.subs,.tags{
-  margin:0px;
 }
-.goto{
-  margin-bottom: 35px;
-}}
 
-@media screen and (min-width:601px){
+@media screen and (min-width:601px) and (max-width:800px){
   header{
-    margin:0% 0% 0% 0%;
+    margin:0% 0% 0% 20%;
     display:flex;
   }
 .container{
@@ -111,8 +108,8 @@ header{
 .square_with_text{
   display:flex;
   flex-direction: column;
-  align-items: center;
   width:100%;
+  align-items: center;
 }
 .mainImage{
   width:100%;
@@ -150,3 +147,59 @@ header{
 .goto{
   font-size: 1.75vw;
   }}
+  @media screen and (min-width:801px){
+    header{
+      margin: 0% 0% 0% 20%;
+      display:flex;
+    }
+  .container{
+    display: flex;
+    flex-direction: row;
+    width:80%;
+  }
+  .squares{
+    display:flex;
+    width:20%;
+    order:1;
+    flex-direction: column;
+    align-items: center;
+  }
+  .square_with_text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+  }
+  .mainImage{
+    width:100%;
+    order:2;
+  }
+  }
+  .links{
+    display:flex;
+    width:33.3333%;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  .secondary_image{
+    width:80px;
+    height:80px;
+    border-radius: 1em;
+  }
+  .box{
+    width:100%;
+  }
+  .link{
+    margin-right: 15px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  .subs,.tags,.goto{
+    width:100%;
+    margin:10 0 0 0px;
+    text-align: center;
+  }
+  .goto{
+    font-size: 1.75vw;
+    }}
